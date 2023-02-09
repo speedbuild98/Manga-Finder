@@ -37,7 +37,7 @@ const App = () => {
     <div className="flex flex-col items-center h-full">
       <form
         onSubmit={handleSubmit}
-        className="w-full bg-[#FFF159] flex items-center mb-5 p-5 justify-center relative"
+        className="w-full bg-[#FFF159] flex items-center mb-5 p-5 justify-center fixed top-0 shadow-sm"
       >
         <div className="flex gap-3 absolute left-4">
           <a target={"_blank"} href="https://github.com/speedbuild98/">
@@ -66,7 +66,7 @@ const App = () => {
           ? `Se encontraron ${searchResults.length} resultados.`
           : "No se encontraron resultados."}
       </p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mt-20">
         {searchResults.map((item) => (
           <a
             target={"_blank"}
